@@ -1241,7 +1241,7 @@ pre {
     height: 800px;
   }
   .member h2{
-    font-size: 30px;
+    font-size: 25px;
   position: absolute;
 
   font-family: 'Times New Roman', Times, serif;
@@ -1271,6 +1271,212 @@ pre {
     line-height: 20px;
     margin-bottom: 0px;
   }
+  .dress{
+    font-size: 4vw;
+    position: absolute;
+    top: 3vh;
+    left: 20%;
+    }
+
+    .under {
+      height: 100vw;
+      min-height: 500px;
+      background-color: bisque;
+      position: relative;
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+    }
+    .mem-introduce{
+      width: 55%;
+      height: 80%;
+      position: absolute;
+      top: 15%;
+      
+    }
+
+    .card {
+      display: flex;
+      height: 200px;
+      width: 130px;
+      background-color: #5279c2;
+      border-radius: 10px;
+      box-shadow: -1rem 0 3rem #000;
+      transition: 0.4s ease-out;
+      position: relative;
+      left: 0px;
+      font-size: 12px;
+    }
+    .card_css {
+      position: absolute;
+      height: 300px;
+      width: 370px;
+      top: 60px;
+      left: 15px;
+      display: flex;
+      justify-content: center; /* 追加 */
+      align-items: center; /* 追加 */
+    }
+    .bar {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      height: 5px;
+      width: 100px;
+    }
+    
+    .circle {
+      position: relative;
+      top: 50%;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      position: static;
+      left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130px;
+      width: 130px; /* 幅を130pxに変更 */
+    }
+main ol li {
+  overflow: hidden;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  margin: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(223, 190, 106, 0.7);
+  height: 70px;
+  line-height: 70px;
+  border-radius: 0;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  background-color: #000000fb;
+  font-size: 20px;
+  text-decoration: none;
+  width: 170px;
+  border: none;
+  border: 1px solid rgba(223, 190, 106, 0.3);
+  cursor: pointer;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+svg {
+  fill: #c59b73;
+  stroke-width: 2px;
+  width: 100px;
+  height: 100px;
+}
+.square {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  z-index: 5;
+  border: 5px solid #5a47c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.top h2 {
+  margin-left: 20px;
+  position: relative;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+}
+
+.top {
+  margin-top: 150px;
+  width: 200px;
+}
+
+.button-container{
+  width:270px ;
+margin: 0px;
+}
+.btn{
+  padding: 20px;
+
+}
+
+pre {
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  font-size: 28px;
+}
+
+.term-wrapper {
+  max-height: 100vh;
+  overflow-y: auto;
+  font-size: 28px;
+
+}
+
+.term {
+  z-index: 1000;
+  font-family: monospace;
+  color: #000000;
+  opacity: 0.8;
+  font-size: 28px;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
+main .icon{
+  width:20vw; 
+  height: auto;
+  position: absolute;
+  top: 5%;
+  left:5%;
+}
+
+.works{
+  width:12vh; 
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left:80%;
+}
+
 }
 
 /* 画面幅が大きいときのスタイル */
