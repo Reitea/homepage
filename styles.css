@@ -400,6 +400,9 @@ main {
   position: relative;
   
 }
+.list p{
+  margin-top: 50px;
+}
 
 main p {
   font-size: 84px;
@@ -546,7 +549,7 @@ main ol li:hover {
   position: relative;
   padding-left: 0px;
   padding: 20px;
-  left: -22%;
+  left: 0%;
   border: #000 solid 2px; 
   top: 90%;
     transition: transform 0.5s;
@@ -1020,7 +1023,7 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
   }
 
   .p-card{
-    height: 50vh;
+    height: 60vh;
     width: 35vw;
     padding-top: 10px;
     background: #94d8bc;
@@ -1043,7 +1046,7 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
     }
 
     .under {
-      height: 100vw;
+      height: 160vw;
       min-height: 500px;
       background-color: bisque;
       position: relative;
@@ -1249,6 +1252,21 @@ pre {
   .list{
     height: 600px;
   }
+
+  .arrow-link {
+    height: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding-left: 0px;
+    padding: 20px;
+    left: 0%;
+    border: #000 solid 2px; 
+    top: 90%;
+      transition: transform 0.5s;
+  }
+
   .member h2{
     font-size: 25px;
   position: absolute;
@@ -1288,7 +1306,7 @@ pre {
     }
 
     .under {
-      height: 100vw;
+      height: 120vw;
       min-height: 500px;
       background-color: bisque;
       position: relative;
@@ -1516,7 +1534,7 @@ main{
     column-count: 4;
   }
   .member h2{
-    font-size: 30px;
+    font-size: 29px;
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
   padding-top: 15px;
