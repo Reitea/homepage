@@ -223,8 +223,9 @@ img:hover {
   height: 100px;
   border-radius: 50%;
   opacity: 0.5;
-  z-index: -1;
+  z-index: 0;
 }
+
 
 .square {
   position: absolute;
@@ -523,181 +524,6 @@ main ol li:hover {
   top: 20%;
   left:80%;
 }
-/* 画面幅が小さいときのスタイル */
-@media (max-width: 768px) {
-  main ul {
-    column-count: 2;
-  }
-  main ol {
-    column-count: 2;
-  }
-  .list{
-    height: 1000px;
-    flex: left;
-    width: 100%;
-    background-color: #e5f1f0;
-    padding-top:200px;
-  }
-  .intro h1{
-    font-size: 15px;
-    padding-left: 1px;
-  }
-  main ul li{
-    width: 200px;
-    padding: 8px;
-  }
-  main{
-    margin-top: 100px;
-  }
-  main .icon{
-    width:20vw; 
-    height: auto;
-    position: absolute;
-    top: 5%;
-    left:5%;
-  }
-  main .works{
-    width:20vw; 
-    height: auto;
-    position: absolute;
-    top: 60%;
-    left:75%;
-  }
-  .member h2{
-    font-size: 3vw;
-  position: absolute;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 30px;
-  padding-right: 20px;
-  }
-  .member h1{
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    font-size: 40px;
-    transform: translate(-50%, 0);
-  
-  }
-  .p-card{
-    height: 50vh;
-    width: 35vw;
-    padding-top: 10px;
-    background: #94d8bc;
-    border-radius: 20px;
-    margin: 5px;
-    overflow: hidden;
-    text-align: center;
-  }
-  .paragraph p{
-    font-size: 10px;
-    line-height: 20px;
-    margin-bottom: 0px;
-  }
-  
-  .dress{
-    font-size: 4vw;
-    position: absolute;
-    top: 3vh;
-    left: 20%;
-    }
-
-    .under {
-      height: 100vw;
-      min-height: 500px;
-      background-color: bisque;
-      position: relative;
-      font-size: 50px;
-      font-family: 'Times New Roman', Times, serif;
-      z-index: 2;
-      width: 100%;
-      text-align: center;
-    }
-}
-
-/* 画面幅が中くらいのときのスタイル */
-@media (min-width: 769px) and (max-width: 1024px) {
-  main ul {
-    column-count: 3;
-  }
-  main ol {
-    column-count: 3;
-  }
-  .list{
-    height: 800px;
-  }
-  .member h2{
-    font-size: 30px;
-  position: absolute;
-
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 15px;
-  }
-  .member h1{
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    font-size: 60px;
-    transform: translate(-50%, 0);
-  
-  }
-  .p-card{
-    height: 50vh;
-    width: 25vw;
-    padding-top: 10px;
-    background: #94d8bc;
-    border-radius: 20px;
-    margin: 20px;
-    overflow: hidden;
-    text-align: center;
-  }
-  .paragraph p{
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 0px;
-  }
-}
-
-/* 画面幅が大きいときのスタイル */
-@media (min-width: 1025px) {
-  main ul {
-    column-count: 4;
-  }
-  main ol {
-    column-count: 4;
-  }
-  .member h2{
-    font-size: 30px;
-  position: absolute;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 15px;
-  }
-  .member h1{
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    font-size: 60px;
-    transform: translate(-50%, 0);
-  
-  }
-  .p-card{
-    height: 50vh;
-    width: 25vw;
-    padding-top: 10px;
-    background: #94d8bc;
-    border-radius: 20px;
-    margin: 20px;
-    overflow: hidden;
-    text-align: center;
-  }
-  .paragraph p{
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 0px;
-  }
-}
 
 .mem-introduce{
   width: 55%;
@@ -706,6 +532,10 @@ main ol li:hover {
   top: 20%;
   
 }
+
+
+
+
 
 
 .arrow-link {
@@ -756,27 +586,7 @@ main ol li:hover {
 }
 
 
-.card_css {
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: flex;
-}
 
-.card {
-  display: flex;
-  height: 280px;
-  width: 200px;
-  background-color: #5279c2;
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-}
 
 .card:not(:first-child) {
     margin-left: -50px;
@@ -803,10 +613,43 @@ main ol li:hover {
   
 }
 
-.bar {
+.card_css {
   position: absolute;
-  top: 100px;
-  left: 20px;
+  height: 300px;
+  width: 600px;
+  top: 150px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  left: 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  width: 200px;
+  background-color: #5279c2;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  transform: scale(1);
+  margin-left: -40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.bar {
+  position: relative;
+  top: 40%;
   height: 5px;
   width: 150px;
 }
@@ -834,10 +677,17 @@ main ol li:hover {
 }
 
 .circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
+  position: relative;
+  top: 50%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: -1;
 }
+
+
 
 .stroke {
   stroke: white;
@@ -849,12 +699,23 @@ main ol li:hover {
 svg {
   fill: #c59b73;
   stroke-width: 2px;
+  width: 120px;
+  height: 120px;
 }
 
 .card:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
+
 }
+
+.card-text {
+  position: relative;
+  top: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
 
 * {
   box-sizing: border-box;
@@ -1113,5 +974,335 @@ pre {
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+/* 画面幅が小さいときのスタイル */
+@media (max-width: 768px) {
+  main ul {
+    column-count: 2;
+    padding: 0px;
+  }
+  main ol {
+    column-count: 2;
+    padding-left: 0px;
+    
+  }
+  .list{
+    height: 1000px;
+    flex: left;
+    width: 100%;
+    background-color: #e5f1f0;
+    padding-top:200px;
+  }
+  .intro h1{
+    font-size: 15px;
+    padding-left: 1px;
+  }
+  main ul li{
+    padding: 8px;
+  }
+  main{
+    margin-top: 100px;
+  }
+  main .icon{
+    width:20vw; 
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left:5%;
+  }
+  main .works{
+    width:20vw; 
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left:75%;
+  }
+  .member h2{
+    font-size: 15px;
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 30px;
+  padding-right: 20px;
+  }
+  .member h1{
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, 0);
+  
+  }
+
+  main ul li {
+    font-weight: bold;
+    font-family: Times, serif;
+    height: 70px;
+    width: auto;
+    break-inside: avoid;
+    margin-bottom: 14px;
+    line-height: 70px;
+    padding: 1px;
+    background-color: royalblue;
+    color: #fff;
+    font-size: 2.5vh;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 5px;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
+  
+  }
+
+  .p-card{
+    height: 50vh;
+    width: 35vw;
+    padding-top: 10px;
+    background: #94d8bc;
+    border-radius: 20px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .paragraph p{
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  
+  .dress{
+    font-size: 4vw;
+    position: absolute;
+    top: 3vh;
+    left: 20%;
+    }
+
+    .under {
+      height: 100vw;
+      min-height: 500px;
+      background-color: bisque;
+      position: relative;
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+    }
+    .mem-introduce{
+      width: 55%;
+      height: 80%;
+      position: absolute;
+      top: 15%;
+      
+    }
+
+    .card {
+      display: flex;
+      height: 200px;
+      width: 130px;
+      background-color: #5279c2;
+      border-radius: 10px;
+      box-shadow: -1rem 0 3rem #000;
+      transition: 0.4s ease-out;
+      position: relative;
+      left: 0px;
+      font-size: 12px;
+    }
+    .card_css {
+      position: absolute;
+      height: 300px;
+      width: 370px;
+      top: 60px;
+      left: 15px;
+      display: flex;
+      justify-content: center; /* 追加 */
+      align-items: center; /* 追加 */
+    }
+    .bar {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      height: 5px;
+      width: 100px;
+    }
+    
+    .circle {
+      position: relative;
+      top: 50%;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      position: static;
+      left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130px;
+      width: 130px; /* 幅を130pxに変更 */
+    }
+main ol li {
+  overflow: hidden;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  margin: 12px;
+  letter-spacing: 0.1em;
+  color: rgba(223, 190, 106, 0.7);
+  height: 70px;
+  line-height: 70px;
+  border-radius: 0;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(270deg, rgba(223, 190, 106, 0.8), rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  background-color: #000000fb;
+  font-size: 20px;
+  text-decoration: none;
+  width: 170px;
+  border: none;
+  border: 1px solid rgba(223, 190, 106, 0.3);
+  cursor: pointer;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+svg {
+  fill: #c59b73;
+  stroke-width: 2px;
+  width: 100px;
+  height: 100px;
+}
+.square {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  z-index: 5;
+  border: 5px solid #5a47c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.top h2 {
+  margin-left: 20px;
+  position: relative;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+}
+
+.top {
+  margin-top: 150px;
+  width: 180px;
+}
+
+.button-container{
+  width:270px ;
+margin: 0px;
+}
+.btn{
+  padding: 20px;
+
+}
+
+}
+
+
+/* 画面幅が中くらいのときのスタイル */
+@media (min-width: 769px) and (max-width: 1024px) {
+  main ul {
+    column-count: 3;
+  }
+  main ol {
+    column-count: 3;
+    
+  }
+  .list{
+    height: 800px;
+  }
+  .member h2{
+    font-size: 30px;
+  position: absolute;
+
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 15px;
+  }
+  .member h1{
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, 0);
+  
+  }
+  .p-card{
+    height: 50vh;
+    width: 25vw;
+    padding-top: 10px;
+    background: #94d8bc;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .paragraph p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+/* 画面幅が大きいときのスタイル */
+@media (min-width: 1025px) {
+  main ul {
+    column-count: 4;
+  }
+  main ol {
+    column-count: 4;
+  }
+  .member h2{
+    font-size: 30px;
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 15px;
+  }
+  .member h1{
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, 0);
+  
+  }
+  .p-card{
+    height: 50vh;
+    width: 25vw;
+    padding-top: 10px;
+    background: #94d8bc;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .paragraph p{
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0px;
   }
 }
