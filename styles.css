@@ -919,44 +919,7 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
   }
 }
 
-pre {
-  z-index: 1000;
-  padding: 0;
-  margin: 0;
-}
 
-.load {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  margin: 0 auto;
-  min-height: 100%;
-  width: 100%;
-  background: rgb(255, 255, 255);
-}
-
-.term-wrapper {
-  max-height: 100vh;
-  overflow-y: auto;
-}
-
-.term {
-  z-index: 1000;
-  font-family: monospace;
-  color: #000000;
-  opacity: 0.8;
-  font-size: 2em;
-  overflow-x: hidden;
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
-.term:after {
-  content: "_";
-  opacity: 1;
-  animation: cursor 1s infinite;
-}
 
 
 @keyframes cursor {
@@ -1219,6 +1182,49 @@ margin: 0px;
 
 }
 
+pre {
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.term-wrapper {
+  max-height: 100vh;
+  overflow-y: auto;
+  font-size: 15px;
+
+}
+
+.term {
+  z-index: 1000;
+  font-family: monospace;
+  color: #000000;
+  opacity: 0.8;
+  font-size: 5px;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.term:after {
+  content: "_";
+  opacity: 1;
+  animation: cursor 1s infinite;
+}
+
 }
 
 
@@ -1304,5 +1310,44 @@ margin: 0px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0px;
+  }
+
+  pre {
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0 auto;
+    min-height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+  }
+  
+  .term-wrapper {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .term {
+    z-index: 1000;
+    font-family: monospace;
+    color: #000000;
+    opacity: 0.8;
+    font-size: 2em;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .term:after {
+    content: "_";
+    opacity: 1;
+    animation: cursor 1s infinite;
   }
 }

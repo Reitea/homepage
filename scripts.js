@@ -326,6 +326,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var time = 1;
   function feedbacker() {
     var mynus=0;
+    
     if(k==1){mynus=4; scrollSpeed=15;}else{mynus=0}
     for(var j = 0; j < 6 - mynus && i+1<output[k].length; j++) {
       i++;
