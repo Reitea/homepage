@@ -162,7 +162,7 @@ body {
 }
 
 .under {
-  height: 50vw;
+  height: 800px;
   min-height: 500px;
   background-color: bisque;
   position: relative;
@@ -947,6 +947,15 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
 
 /* 画面幅が小さいときのスタイル */
 @media (max-width: 768px) {
+  .extra{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   main ul {
     column-count: 2;
     padding: 0px;
@@ -1233,11 +1242,72 @@ pre {
   font-size: 13px;
   font-family: "さわらび明朝", "Noto Serif Japanese", serif;
 }
+.extra{
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.products{
+  width: 100%;
+  height: 800px;
+  background-color: #e5f1f0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.products img{
+margin-left: 2%;
+width: 35%;
+}
+.products-content{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffffcc;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box; /* 追加 */
+  overflow-wrap: break-word; /* 追加 */
+}
+.products-content h1{
+font-size: 40px;
+margin-top: 20px;
+text-align: center;
+}
+
+.products-content p{
+  padding: 10px;
+  top: 7%;
+  width: 100%;
+  font-size: 17px;
+  margin-top: 50px;
+font-family: "さわらび明朝", "Noto Serif Japanese", serif;
+text-align: center;
+  box-sizing: border-box; /* 追加 */
+  overflow-wrap: break-word; /* 追加 */
+}
 }
 
 
 /* 画面幅が中くらいのときのスタイル */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+  .extra{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   main ul {
     column-count: 4;
     padding-left: 0px;
@@ -1522,6 +1592,48 @@ main .icon{
 main{
   height: 9900px;
 }
+.products{
+  width: 100%;
+  height: 800px;
+  background-color: #e5f1f0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.products img{
+margin-left: 10%;
+width: 25%;
+}
+.products-content{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffffcc;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box; /* 追加 */
+  overflow-wrap: break-word; /* 追加 */
+}
+.products-content h1{
+font-size: 60px;
+margin-top: 20px;
+text-align: center;
+}
+
+.products-content p{
+  padding: 10px;
+  top: 7%;
+  width: 100%;
+  font-size: 25px;
+  margin-top: 80px;
+font-family: "さわらび明朝", "Noto Serif Japanese", serif;
+text-align: center;
+  box-sizing: border-box; /* 追加 */
+  overflow-wrap: break-word; /* 追加 */
+}
+
 
 }
 
@@ -1602,4 +1714,59 @@ main{
     opacity: 1;
     animation: cursor 1s infinite;
   }
+
+  .extra{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .extra{
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+.products{
+  width: 100%;
+  height: 800px;
+  background-color: #e5f1f0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.products img{
+margin-left: 10%;
+}
+.products-content{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffffcc;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding: 30px;
+}
+.products-content h1{
+font-size: 70px;
+margin-top: 0px;
+text-align: center;
+}
+
+.products-content p{
+  padding: 30px;
+  top: 15%;
+  font-size: 30px;
+  margin-top: 50px;
+font-family: "さわらび明朝", "Noto Serif Japanese", serif;
+text-align: center;
+}
+}
+
