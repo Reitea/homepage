@@ -327,8 +327,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function feedbacker() {
     var mynus=0;
     
-    if(k==1){mynus=4; scrollSpeed=15;}else{mynus=0}
-    for(var j = 0; j < 6 - mynus && i+1<output[k].length; j++) {
+    if(k==1){mynus=2; scrollSpeed=15;}else{mynus=0}
+    for(var j = 0; j < 4 - mynus && i+1<output[k].length; j++) {
       i++;
       textarea.append("[" + count / 500 + "] " + output[k][i] + "<br>");
     }

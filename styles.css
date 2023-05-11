@@ -118,7 +118,7 @@ a {
 .top h2 {
   margin-left: 50px;
   position: relative;
-  font-size: calc(2vw + 20px);
+  font-size: calc(2vw + 15px);
   font-family: 'Times New Roman', Times, serif;
   z-index: 2;
 }
@@ -947,6 +947,12 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
 
 /* 画面幅が小さいときのスタイル */
 @media (max-width: 768px) {
+  .header {
+  margin-top: 80px;
+  margin-left: 10%;
+  font-size: 5vw;
+  font-family: 'Times New Roman', Times, serif;
+}
   .extra{
     width: 100%;
     height: auto;
@@ -955,6 +961,9 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .extra h2{
+    font-size: 30px;
   }
   main ul {
     column-count: 2;
@@ -1028,11 +1037,12 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
     text-decoration: none;
     border-bottom: 5px;
     transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
+    overflow: hidden;
   
   }
 
   .p-card{
-    height: 60vh;
+    height: 65vh;
     width: 35vw;
     padding-top: 10px;
     background: #94d8bc;
@@ -1055,7 +1065,7 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
     }
 
     .under {
-      height: 160vw;
+      height: 180vw;
       min-height: 500px;
       background-color: bisque;
       position: relative;
@@ -1661,7 +1671,7 @@ text-align: center;
   
   }
   .p-card{
-    height: 50vh;
+    height: 500px;
     width: 25vw;
     padding-top: 10px;
     background: #94d8bc;
@@ -1674,6 +1684,7 @@ text-align: center;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0px;
+    padding: 0px 20px;
   }
 
   pre {
@@ -1762,3 +1773,6 @@ text-align: center;
 
 }
 
+@media(min-width:1025px)and(max-width:1500px){
+
+}
