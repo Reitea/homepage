@@ -1,5 +1,4 @@
-console.log('Script file executed.'); // 最初の行にこのコードを追加
-//何で上手く行かないん？　どうして？５
+console.log('Script file executed.'); // 最初の行にこのコードを追加する
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script loaded and ready.');
