@@ -5,6 +5,8 @@ footer{
 align-items: center;
 position: relative;
 }
+/**/
+
 html{
   scroll-behavior: smooth;
 }
@@ -137,7 +139,7 @@ body {
   
 }
 .body-contain{
-  height:300vh; 
+  height:320vh; 
   min-height: 2400px;
 }
 .novel {
