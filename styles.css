@@ -126,7 +126,7 @@ a {
 }
 
 body {
-  height: 5000px;
+  height: 100%;
   background-color: antiquewhite;
   margin: 0;
   width: 100%;
@@ -135,6 +135,10 @@ body {
   width: 100%;
   flex-direction: column;
   
+}
+.body-contain{
+  height:300vh; 
+  min-height: 2400px;
 }
 .novel {
   position: relative;
@@ -1048,6 +1052,7 @@ font-family: "さわらび明朝", "Noto Serif Japanese", serif;
     margin: 5px;
     overflow: hidden;
     text-align: center;
+    
   }
   .paragraph p{
     font-size: 10px;
@@ -1304,7 +1309,12 @@ text-align: center;
 
 
 /* 画面幅が中くらいのときのスタイル */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .body-contain{
+    height:3000px; 
+    min-height: 2400px;
+  }
 
   .extra{
     width: 100%;
@@ -1339,7 +1349,7 @@ text-align: center;
     position: relative;
     padding-left: 0px;
     padding: 20px;
-    left: 0%;
+    left: -15%;
     border: #000 solid 2px; 
     top: 90%;
       transition: transform 0.5s;
@@ -1362,7 +1372,7 @@ text-align: center;
   
   }
   .p-card{
-    height: 50vh;
+    height: 520px;
     width: 25vw;
     padding-top: 10px;
     background: #94d8bc;
@@ -1370,11 +1380,13 @@ text-align: center;
     margin: 20px;
     overflow: hidden;
     text-align: center;
+    
   }
   .paragraph p{
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0px;
+    padding: 10px;
   }
   .dress{
     font-size: 4vw;
@@ -1384,7 +1396,7 @@ text-align: center;
     }
 
     .under {
-      height: 120vw;
+      height: 100vw;
       min-height: 500px;
       background-color: bisque;
       position: relative;
@@ -1505,14 +1517,14 @@ svg {
 .top h2 {
   margin-left: 20px;
   position: relative;
-  font-size: 30px;
+  font-size: 35px;
   font-family: 'Times New Roman', Times, serif;
   z-index: 2;
 }
 
 .top {
   margin-top: 150px;
-  width: 200px;
+  width: 280px;
 }
 
 .button-container{
@@ -1646,7 +1658,7 @@ text-align: center;
 }
 
 /* 画面幅が大きいときのスタイル */
-@media (min-width: 1025px) {
+@media (min-width: 1201px) {
   main ul {
     column-count: 4;
   }
@@ -1771,6 +1783,3 @@ text-align: center;
 
 }
 
-@media(min-width:1025px)and(max-width:1500px){
-
-}
