@@ -167,6 +167,7 @@ function startAllSquareAnimations() {
     });
 }
 
+/*square animation
 square.addEventListener("click", () => {
     const squareAnimation = square.style.animation;
     const buttonText = square.textContent;
@@ -179,7 +180,7 @@ square.addEventListener("click", () => {
         square.textContent = "STOP";
     }
 });
-
+*/
 //テキストアニメーション
 const CLASSNAME = "-visible";
 const TIMEOUT = 2500;
@@ -295,7 +296,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var i = 0;
   var k = Math.floor(Math.random() * 2);
   
+  console.log('ロードされました');
   if (sessionStorage.getItem('animationExecuted') === null) {
+    
+  console.log('runします');
     runner();
     // アニメーションが実行された後、セッションストレージに記録
     sessionStorage.setItem('animationExecuted', 'true');
