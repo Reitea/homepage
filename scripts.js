@@ -1,5 +1,6 @@
 console.log('Script file executed.'); // 最初の行にこのコードを追加する
 /**/
+//<!--文塵ト淀ホームページ-->
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script loaded and ready.');
 
